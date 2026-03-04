@@ -1,0 +1,36 @@
+{
+  "title": "Booking.com Scraper Input",
+  "description": "Configuration for Booking.com hotel scraping",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "destinations": {
+      "title": "Destinations",
+      "type": "array",
+      "description": "Hotel destinations to search (e.g., ['New York', 'Paris'])",
+      "items": { "type": "string" },
+      "editor": "stringList"
+    },
+    "checkIn": {
+      "title": "Check-in Date",
+      "type": "string",
+      "description": "Check-in date (YYYY-MM-DD format)",
+      "editor": "textfield"
+    },
+    "checkOut": {
+      "title": "Check-out Date",
+      "type": "string",
+      "description": "Check-out date (YYYY-MM-DD format)",
+      "editor": "textfield"
+    },
+    "maxHotels": {
+      "title": "Maximum Hotels",
+      "type": "integer",
+      "description": "Maximum number of hotels to scrape",
+      "default": 20,
+      "minimum": 1,
+      "maximum": 500
+    }
+  },
+  "required": ["destinations", "checkIn", "checkOut"]
+}
