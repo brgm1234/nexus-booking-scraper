@@ -1,0 +1,9 @@
+{
+  "actorSpecVersion": 1,
+  "name": "nexus-booking-scraper",
+  "title": "Booking.com Scraper",
+  "description": "Crawls booking.com search results, extracts name, rating, reviewCount, price, location, stars, url, freeCancellation",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "environmentVariables": [],
+}
